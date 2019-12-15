@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+}
+header {
+    height: 10vh;
+    text-align: center;
+}
+#obiekt {
+    width: 30px;
+    height: 30px;
+    background: blue;
+}
+.film {
+    display: flex;
+    margin: 30px;
+}
+.film img {
+    margin: 0px 20px;
+    padding: 60px 0px;
+    display: block;
+    width: 200px;
+    height: auto;
+}

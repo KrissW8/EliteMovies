@@ -16,13 +16,12 @@ const fetchTopMovies = async () => {
 
 fetchTopMovies().then((data) => {
     for(let i=0; i<data.results.length; i++) {
-        app.innerHTML += `<div class=film id=film${i}>
-                            <img src=${imageOnSitePath}${data.results[i].poster_path}></i>
-                            <description>
-                            <h3>${data.results[i].title}</h3>
+        app.innerHTML += `<div class="film div-shadow" id=film${i}>
+                            <img class="responsive div-shadow" src=${imageOnSitePath}${data.results[i].poster_path}></i>
+                            <div class="description">
+                            <h2>${data.results[i].title}</h2>
                             <p>${data.results[i].overview}</p>
-                            <p>${data.results[i].overview}</p>
-                            </description>
-                        </div>`;
+                            </div>
+                        </img>`;
     }
 })

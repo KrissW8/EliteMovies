@@ -1,23 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
+.div-shadow {
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
+    box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
+}
+
 header {
-    height: 10vh;
+    margin: 0px;
+    padding: 0px;
+    height: 40vh;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),      rgba(0, 0, 0, 0.5)),
+    url("./src/images/hero.jpg") center / cover;
 }
-#obiekt {
-    width: 30px;
-    height: 30px;
-    background: blue;
+
+header h1 {
+    font-size: 3em;
+    align-self: center;
+}
+h2 {
+    margin: 10px 0px;
+}
+#app {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .film {
+    margin: 10px;
+    padding: 10px;
     display: flex;
-    margin: 30px;
 }
 .film img {
-    margin: 0px 20px;
-    padding: 60px 0px;
     display: block;
-    width: 200px;
+    max-width: 50%;
     height: auto;
+}
+@media screen and (max-width: 800px) {
+    .film {
+        margin: 0px;
+        padding: 0px;
+        flex-basis: 100vw;
+        flex-direction: column;
+    }
+    .film img {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1920px) {
+    .film {
+        flex-basis: 45vw;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .film {
+        flex-basis: 30vw;
+    }
+}
+
+.film .description {
+    padding: 0px 10px;
 }

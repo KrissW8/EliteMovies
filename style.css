@@ -7,6 +7,24 @@ body {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+a {
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover, a:active {
+    color: gold;
+}
+
+
 
 .div-shadow {
     -webkit-box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
@@ -14,16 +32,33 @@ body {
     box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
 }
 
+#hero {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("./src/images/hero.jpg") center / cover;
+}
+#top-navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+#top-navbar a{
+    padding: 10px 20px;
+   
+}
 header {
     margin: 0px;
     padding: 0px;
-    height: 40vh;
+    height: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),      rgba(0, 0, 0, 0.5)),
-    url("./src/images/hero.jpg") center / cover;
 }
 
 header h1 {
@@ -74,4 +109,12 @@ h2 {
 
 .film .description {
     padding: 0px 10px;
+}
+
+footer {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }

@@ -24,8 +24,6 @@ a:hover, a:active {
     color: gold;
 }
 
-
-
 .div-shadow {
     -webkit-box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
     -moz-box-shadow: 4px 4px 5px 0px rgba(153, 148, 153, 0.75);
@@ -50,7 +48,7 @@ a:hover, a:active {
 }
 #top-navbar a{
     padding: 10px 20px;
-   
+    margin-right: 20px;
 }
 header {
     margin: 0px;

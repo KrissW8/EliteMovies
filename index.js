@@ -30,6 +30,7 @@ const fetchDraw = (data) => {
                             </div>
                             </img>`;
     }
+    app.innerHTML += "<footer><p>© Copyright 2019 by Krystian Waśkowski</p ></footer>";
     document.getElementById('film1').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 };  
 
